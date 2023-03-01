@@ -56,7 +56,7 @@ To get a local copy up and running, follow these steps.
 
 In order to run this project you need:
 
-Ruby on Rails installed and running. To get more information, read the installation guide.
+Ruby on Rails installed and running.
 
 PostgreSQL installed and running
 
