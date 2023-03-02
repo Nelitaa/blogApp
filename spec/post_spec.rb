@@ -1,9 +1,9 @@
-require'rails_helper'
+require 'rails_helper'
 
 RSpec.describe Post, type: :model do
   subject { Post.new(title: 'Title', text: 'Text', author_id: 1) }
 
-  before { subject.save}
+  before { subject.save }
 
   it 'Title should be present' do
     subject.title = ''
