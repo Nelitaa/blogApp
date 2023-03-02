@@ -97,9 +97,9 @@ To run the project, execute the following command:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[Controllers_specs]**
-- [ ] **[Creating_a_data_model]**
-- [ ] **[Processing_data_in_models]**
+- [ ] **[Views]**
+- [ ] **[Forms]**
+- [ ] **[Validations_Model_specs_and_n+1_problems]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
