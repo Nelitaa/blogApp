@@ -85,6 +85,14 @@ To run the project, execute the following command:
   rails server
 ```
 
+### Test
+
+To test the project, execute the following command:
+
+```sh
+  rspec
+```
+
 ## 👥 Authors <a name="authors"></a>
 
 👤 **Marianela Muñoz Gutierrez**
