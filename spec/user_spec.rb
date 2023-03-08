@@ -30,3 +30,32 @@ RSpec.describe User, type: :model do
     expect(subject).to be_valid
   end
 end
+
+RSpec.describe UsersController, type: :request do
+  describe 'GET #index' do
+    it 'returns a success response' do
+      get users_url
+      expect(response).to have_http_status(200)
+    end
+
+    it 'response body includes the user name' do
+      user = User.create!(name: 'John', photo: 'https://www.google.com', bio: 'I am a user')
+      get users_url
+      expect(response.body).to include(user.name)
+    end
+  end
+
+  describe 'GET #show' do
+    it 'returns a success response' do
+      user = User.create!(name: 'John', photo: 'https://www.google.com', bio: 'I am a user')
+      get user_url(user)
+      expect(response).to be_successful
+    end
+
+    it 'response body includes the user name' do
+      user = User.create!(name: 'John', photo: 'https://www.google.com', bio: 'I am a user')
+      get user_url(user)
+      expect(response.body).to include(user.name)
+    end
+  end
+end
