@@ -1,1 +1,11 @@
-<h2>User</h2>
+<section>
+  <%= render 'shared/user', user: @user %>
+  <div>
+    <h2>Bio</h2>
+    <p><%= @user.bio %></p>
+  </div>
+  <ul>
+    <%= render partial: 'shared/post', collection: @recent_posts %>
+  </ul>
+  <button type="button"><%= link_to 'See all posts', user_posts_path(@user) %></button>
+</section>
