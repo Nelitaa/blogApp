@@ -1,1 +1,6 @@
-<h1>Posts</h1>
+<section>
+  <%= render 'shared/user', user: @user %>
+  <ul>
+    <%= render partial: 'shared/post', collection: @posts %>
+  </ul>
+</section>
