@@ -4,5 +4,6 @@ class PostsController < ApplicationController
     @posts = @user.posts
   end
 
-  def show; end
+  def show
+  end
 end

@@ -1,0 +1,5 @@
+<ul>
+  <%= post.comments.each do |comment| %>
+    <%= render partial: 'shared/comment', locals: { comment: comment } %>
+  <% end %>
+</ul>
