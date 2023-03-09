@@ -1,3 +1,6 @@
 <section>
-    <p>Post# <%= @post.id %></p>
+    <p>Post #<%= @post.id %>: <%= @post.title %> by <%= @user.name %></p>
+    <%= render partial: 'shared/counters', locals: { post: @post } %>
+    <p><%= @post.text %></p>
+    <%= render partial: 'shared/comments', locals: { post: @post } %>
 </section>
