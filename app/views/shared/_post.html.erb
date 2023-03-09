@@ -1,5 +1,5 @@
 <li>
-  <h2>Post #<%= post.id %></h2>
+  <h2><%= link_to post.title, user_post_path(user_id: post.author.id, id: post.id) %> #<%= post.id %></h2>
   <p><%= post.text %></p>
   <%= render partial: 'shared/counters', locals: { post: post } %>
   <%= render partial: 'shared/comments', locals: { post: post } %>

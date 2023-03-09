@@ -1,5 +1,9 @@
 <ul>
-  <%= post.comments.each do |comment| %>
-    <%= render partial: 'shared/comment', locals: { comment: comment } %>
+  <% if post.comments.empty? %>
+    <li>There are no comments yet.</li>
+  <% else %>
+    <%= post.comments.each do |comment| %>
+      <%= render partial: 'shared/comment', locals: { comment: comment } %>
+    <% end %>
   <% end %>
 </ul>
