@@ -13,3 +13,22 @@ ul.comments {
   align-items: start;
   padding: 1%;
 }
+
+.post-buttons {
+  display: flex;
+  justify-content: end;
+  column-gap: 2%;
+}
+
+.post-buttons button {
+  border: 1px solid #7d87a9;
+  border-radius: 5px;
+  width: auto;
+}
+
+.post-buttons input {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  width: 200%;
+}

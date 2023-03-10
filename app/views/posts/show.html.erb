@@ -3,6 +3,14 @@
         <h2>Post #<%= @post.id %>: <%= @post.title %> by <%= @user.name %></h2>
         <%= render partial: 'shared/counters', locals: { post: @post } %>
         <p class="post-text"><%= @post.text %></p>
+        <div class="post-buttons">
+            <button type="button">
+                <%= form_with model: @like, url: user_post_likes_path(user_id: @post.author.id, post_id: @post.id), local: true do |form| %>
+                    <%= form.submit 'Add a Like' %>
+                <% end %>
+            </button>
+            <button type="button"><%= link_to "Add a Comment", new_user_post_comment_path(user_id: @post.author.id, post_id: @post.id)  %></button>
+        </div>
         <%= render partial: 'shared/comments', locals: { post: @post } %>
     </div>
 </section>
