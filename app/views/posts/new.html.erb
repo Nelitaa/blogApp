@@ -1,0 +1,7 @@
+<section>
+  <div class="blue-box bio">
+    <h2>New Post</h2>
+    <%= render "shared/form", post: @post %>
+    <button type="button"><%=link_to 'Back', user_posts_path %></button>
+  </div>
+</section>
