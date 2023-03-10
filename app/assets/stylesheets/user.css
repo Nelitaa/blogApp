@@ -13,7 +13,7 @@
   padding: 5%;
   width: 90%;
   background-color: #7d87a9;
-  box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
+  box-shadow: 10px 10px 14px 2px rgba(0, 0, 0, 0.47);
 }
 
 .blue-box:hover {
@@ -34,11 +34,10 @@ img {
   height: 100%;
   width: 30%;
   margin-right: 5%;
-  box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
+  box-shadow: 10px 10px 14px 2px rgba(0, 0, 0, 0.47);
 }
 
 .bio {
-  width: auto;
   align-self: start;
   width: 90%;
 }
@@ -46,7 +45,6 @@ img {
 .bio p {
   align-self: start;
 }
-
 
 .bio:hover {
   opacity: 1;
