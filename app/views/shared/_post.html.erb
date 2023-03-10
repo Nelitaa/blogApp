@@ -1,0 +1,9 @@
+<br>
+<li class="blue-box">
+  <h2>Post #<%= post.id %> <%= link_to post.title, user_post_path(user_id: post.author.id, id: post.id) %></h2>
+  <p class="post-text"><%= post.text %></p>
+  <%= render partial: 'shared/counters', locals: { post: post } %>
+  <% if post.comments.any? %>
+    <%= render partial: 'shared/comments', locals: { post: post } %>
+  <% end %>
+</li>
