@@ -6,18 +6,28 @@
   width: auto;
 }
 
-.user-presentation {
+.blue-box {
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 5%;
-  width: 100%;
+  width: 90%;
   background-color: #7d87a9;
   box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
 }
 
-.user-presentation:hover {
+.blue-box:hover {
   opacity: 0.5;
+}
+
+.blue-box h2,
+.blue-box h2 a {
+  color: #90caca;
+}
+
+.blue-box p {
+  color: #fff;
+  align-self: end;
 }
 
 img {
@@ -27,11 +37,21 @@ img {
   box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
 }
 
-h2 a {
-  color: #90caca;
+.bio {
+  width: auto;
+  align-self: start;
+  width: 90%;
 }
 
-.user-presentation p {
-  color: #fff;
-  align-self: end;
+.bio p {
+  align-self: start;
+}
+
+
+.bio:hover {
+  opacity: 1;
+}
+
+p.post-text {
+  align-self: start;
 }

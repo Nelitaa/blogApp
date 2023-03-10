@@ -1,0 +1,15 @@
+.comments {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+}
+
+ul.comments {
+  color: #7d87a9;
+  align-items: start;
+  padding: 1%;
+}
