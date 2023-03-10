@@ -11,7 +11,7 @@ class CommentsController < ApplicationController
       flash[:success] = 'Comment created successfully!'
       redirect_to user_post_path(user_id: params[:user_id], id: params[:post_id])
     else
-      flash[:alert] = "Comment not created!"
+      flash[:alert] = 'Comment not created!'
       render :new
     end
   end
