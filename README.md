@@ -98,9 +98,14 @@ To test the project, execute the following command:
 
 👤 **Marianela Muñoz Gutierrez**
 
-- GitHub: [@githubhandle](https://github.com/Nelitaa)
-- Twitter: [@twitterhandle](https://twitter.com/MarianelaMunoz_)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/marianela-munoz/)
+- GitHub: [@Nelitaa](https://github.com/Nelitaa)
+- Twitter: [@MarianelaMunoz](https://twitter.com/MarianelaMunoz_)
+- LinkedIn: [Marianela-munoz](https://www.linkedin.com/in/marianela-munoz/)
+
+👤 **Marianela Muñoz Gutierrez**
+
+- GitHub: [@emmanuellmhango](https://github.com/emmanuellmhango)
+- LinkedIn: [@emmanuellmhango](https://www.linkedin.com/in/emmanuellmhango)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
