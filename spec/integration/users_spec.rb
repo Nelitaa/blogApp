@@ -39,9 +39,8 @@ RSpec.describe 'User', type: :feature do
     before(:each) do
       @user = User.create(name: 'John',
                           photo: 'https://images.unsplash.com/photo-1508921912186-1d1a45ebb3c1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2432&q=80',
-                          bio: 'I am a user', 
-                          posts_counter: 3
-                        )
+                          bio: 'I am a user',
+                          posts_counter: 3)
       @first_post = Post.create(title: 'First', text: 'First post', comments_counter: 1, likes_counter: 1,
                                 author: @user)
       @second_post = Post.create(title: 'Second', text: 'Second post', comments_counter: 1, likes_counter: 1,
