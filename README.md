@@ -41,9 +41,10 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **[project_schema]**
-- **[migration_files]**
-- **[foreign_keys]**
+- [ ] **[Read_all_blogs]**
+- [ ] **[Create_Blog]**
+- [ ] **[Delete_Blog]**
+- [ ] **[Update_Blog]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -105,9 +106,8 @@ To test the project, execute the following command:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[Views]**
-- [ ] **[Forms]**
-- [ ] **[Validations_Model_specs_and_n+1_problems]**
+- [ ] **[Make_UI_user_friendly]**
+- [ ] **[Make_database_efficient]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
