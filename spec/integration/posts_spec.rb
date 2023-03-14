@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe 'Post', type: :feature do
   describe 'Post index page' do
     before(:each) do
-      @user = User.create(name: 'John',
+      @user = User.create(name: 'Emmanuel',
                           photo: 'https://images.unsplash.com/photo-1508921912186-1d1a45ebb3c1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2432&q=80',
                           bio: 'I am a user', posts_counter: 1)
       @post = Post.create(title: 'First', text: 'First post', comments_counter: 2, likes_counter: 1, author: @user)
@@ -56,7 +56,7 @@ RSpec.describe 'Post', type: :feature do
 
   describe 'Post show page' do
     before(:each) do
-      @first_user = User.create(name: 'Jhon',
+      @first_user = User.create(name: 'Emmanuel',
                                 photo: 'https://images.unsplash.com/photo-1508921912186-1d1a45ebb3c1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2432&q=80',
                                 bio: 'Developer', posts_counter: 1)
       @second_user = User.create(name: 'Nela',
@@ -70,8 +70,8 @@ RSpec.describe 'Post', type: :feature do
       visit user_post_path(user_id: @first_user.id, id: @post.id)
     end
 
-    it "Shows the post's title" do
-      expect(page).to have_content(@post.title)
+    it 'should render the number of likes' do
+      expect(page).to have_content(@post.likes_counter)
     end
 
     it 'shows who wrote the post' do
@@ -82,8 +82,8 @@ RSpec.describe 'Post', type: :feature do
       expect(page).to have_content(@post.comments_counter)
     end
 
-    it 'should render the number of likes' do
-      expect(page).to have_content(@post.likes_counter)
+    it "Shows the post's title" do
+      expect(page).to have_content(@post.title)
     end
 
     it "shows the post's body" do
