@@ -60,3 +60,41 @@ form input {
   margin: 2%;
   padding: 2%;
 }
+
+.blue-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5%;
+  width: 90%;
+  background-color: #7d87a9;
+  box-shadow: 10px 10px 14px 2px rgba(0, 0, 0, 0.47);
+}
+
+.blue-box:hover {
+  opacity: 0.5;
+}
+
+.blue-box h2,
+.blue-box h2 a {
+  color: #90caca;
+}
+
+.blue-box p {
+  color: #fff;
+  align-self: end;
+}
+
+
+.bio {
+  align-self: start;
+  width: 90%;
+}
+
+.bio p {
+  align-self: start;
+}
+
+.bio:hover {
+  opacity: 1;
+}
