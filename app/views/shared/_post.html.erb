@@ -5,5 +5,8 @@
   <%= render partial: 'shared/counters', locals: { post: post } %>
   <% if post.comments.any? %>
     <%= render partial: 'shared/comments', locals: { post: post } %>
+    <% if can? :delete, post %>
+      <button type="button" class="delete-post"><%= link_to "Delete Post", user_post_path(user_id: post.author.id, id: post.id), data: { turbo_method: :delete } %></button>
+    <% end %>
   <% end %>
 </li>

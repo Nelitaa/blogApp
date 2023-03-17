@@ -97,3 +97,13 @@ form input {
 .bio:hover {
   opacity: 1;
 }
+
+.delete-post {
+  align-self: end;
+}
+
+.delete-comment {
+  width: 180px;
+  box-shadow: none;
+  margin-left: 5%;
+}
