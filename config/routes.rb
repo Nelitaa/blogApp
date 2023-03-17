@@ -12,5 +12,14 @@ Rails.application.routes.draw do
     end
   end
 
+  namespace :api do
+    namespace :v1 do
+      resources :users, only: [:index, :show] do
+        resources :posts, only: [:index, :create] do
+        end
+      end
+    end
+  end
+
   root 'users#index'
 end
