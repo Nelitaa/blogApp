@@ -11,6 +11,10 @@ gem 'jwt'
 
 gem 'rswag'
 
+gem 'faker'
+
+gem 'factory_bot_rails'
+
 gem 'rubocop', '>= 1.0', '< 2.0'
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
