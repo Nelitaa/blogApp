@@ -3,6 +3,8 @@
     <h2>Log in</h2>
 
     <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+      <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+      
       <div class="field">
         <%= f.label :email %><br />
         <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
